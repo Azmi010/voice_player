@@ -1,5 +1,4 @@
 import 'package:audio_player_tutorial2/utils/utils.dart';
-// import 'package:audio_player_tutorial2/widgets/audio_info.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 
@@ -108,8 +107,8 @@ class _HomeScreenState extends State<HomeScreen> {
                     borderRadius: BorderRadius.circular(15),
                     child: const Image(
                       image: AssetImage('assets/images/sipitung.jpeg'),
-                      width: 350,
-                      height: 200,
+                      width: 300,
+                      height: 150,
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -120,6 +119,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       style: TextStyle(
                           fontFamily: 'poppins',
                           fontWeight: FontWeight.w400,
+                          fontSize: 12,
                           color: Colors.white),
                       textAlign: TextAlign.justify,
                     ),
@@ -128,7 +128,8 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             Container(
-              decoration: BoxDecoration(borderRadius: BorderRadius.circular(20)),
+              decoration:
+                  BoxDecoration(borderRadius: BorderRadius.circular(20)),
               child: Column(
                 children: [
                   Row(
@@ -147,6 +148,9 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                       ),
                     ],
+                  ),
+                  const SizedBox(
+                    height: 20,
                   ),
                   Container(
                     margin: const EdgeInsets.only(right: 25),
@@ -187,7 +191,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         },
                         icon: const Icon(Icons.stop_circle),
                         color: Colors.white,
-                        iconSize: 35,
+                        iconSize: 42,
                       ),
                     ],
                   )
